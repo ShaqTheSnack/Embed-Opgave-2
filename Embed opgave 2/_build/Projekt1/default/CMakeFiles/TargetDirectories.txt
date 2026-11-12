@@ -1,0 +1,4 @@
+C:/Users/srd/OneDrive - JCD A S/Skrivebord/Skole/Embed opgave 2/_build/Projekt1/default/CMakeFiles/Projekt1_default_default_XC8_compile.dir
+C:/Users/srd/OneDrive - JCD A S/Skrivebord/Skole/Embed opgave 2/_build/Projekt1/default/CMakeFiles/Projekt1_default_image_v6529Ro9.dir
+C:/Users/srd/OneDrive - JCD A S/Skrivebord/Skole/Embed opgave 2/_build/Projekt1/default/CMakeFiles/edit_cache.dir
+C:/Users/srd/OneDrive - JCD A S/Skrivebord/Skole/Embed opgave 2/_build/Projekt1/default/CMakeFiles/rebuild_cache.dir

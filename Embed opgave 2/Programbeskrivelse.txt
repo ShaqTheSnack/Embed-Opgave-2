@@ -1,0 +1,22 @@
+Programbeskrivelse - Embedded Opgave 2
+
+Programmet starter med at sætte de to lysdioder som udgange. Derefter bliver
+Timer1 og de to UART-forbindelser startet. Begge UART-forbindelser kører med
+9600 baud, 8 databits, ingen paritet og 1 stopbit.
+
+Timer1 giver et interrupt hvert sekund. Inde i interruptet skifter de to
+lysdioder tilstand, og variablen Timer1ElapsedFlag bliver sat til 1.
+
+I programmets main-loop bliver der hele tiden kigget på flaget. Når flaget er
+1, bliver det nulstillet igen. Sekundtælleren bliver derefter lagt 1 til, og
+teksten "Sekunder efter opstart" bliver sendt ud på UART1. Tælleren starter
+på 1200, så den første tekst viser 1201.
+
+Når computeren sender et tegn til UART0, kommer programmet ind i UART0 receive
+interruptet. Et lille bogstav bliver lavet om til et stort bogstav, og et stort
+bogstav bliver lavet om til et lille bogstav. Tal, mellemrum og andre tegn
+bliver ikke ændret. Det færdige tegn bliver sendt ud på både UART0 og UART1.
+
+UART0 bruges gennem boardets normale USB-forbindelse. UART1 bruges gennem
+CP2102-modulet. CP2102 er forbundet med 5V, GND, PortB3 og PortB4. I VS Code
+skal begge Serial Monitor-vinduer sættes til 9600 baud og 8N1.
